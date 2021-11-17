@@ -147,7 +147,9 @@ div h3 {
 
 li {
     list-style: none;
-    color: gold;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 li:before {
@@ -176,7 +178,9 @@ li:before {
 }
 
 .film a {
-    color: gold;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .film {

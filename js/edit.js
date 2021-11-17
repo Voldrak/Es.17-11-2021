@@ -12,36 +12,35 @@ const edit = (id = 0) => {
       render(
         container,
         `<div>
-          <h3>Modifica una scheda</h3>
-          <form id="create">
-            <div class="row">
-              <label for="title">Titolo:</label>
-              <input type="text" id="title" name="title" 
-                value="${movie.title}" />
-            </div>
-  
-            <div class="row">
-              <label for="poster">Poster:</label>
-              <input type="text" id="poster" name="poster"
-                value="${movie.poster}" />
-            </div>
-  
-            <div class="row">
-              <label for="year">Anno:</label>
-              <input type="number" min="1900"
-                value="${movie.year}" id="year" name="year" />
-            </div>
-  
-            <div class="row">
-              <label for="description">Descrizione:</label>
-              <textarea id="description" name="description">${movie.description}</textarea>
-            </div>
-      
-            <button>Aggiorna scheda</button>
-          </form>
-      
+        <h3>Modifica una scheda</h3>
+        <form id="create">
+        <div class="modulo">
+          <div class="row">
+            <label for="title">Titolo:</label>
+            <input type="text" id="title" name="title" value="${movie.title}"/>
+          </div>
+          <div class="row">
+            <label for="poster">Poster:</label>
+            <input type="text" id="poster" name="poster" value="${movie.poster}/>
+          </div>
+          <div class="row">
+            <label for="year">Anno:</label>
+            <input type="number" min="1900" value="${movie.year}" id="year" name="year" />
+          </div>
+          <div class="row">
+            <label for="description">Descrizione:</label>
+            <textarea id="description" name="description">${movie.description}</textarea>
+          </div>
+        </div>
+        <div class="saveBtn">  
+          <button>Modifica scheda</button>
+        </div>
+        
+        </form>
+        <div class="backDiv">
           <a href="#" id="back">Torna alla home</a>
-        </div>`
+        </div>
+      </div>`
       );
 
       // Gestisco il submit della form
