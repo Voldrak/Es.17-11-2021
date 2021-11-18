@@ -21,7 +21,7 @@ const edit = (id = 0) => {
           </div>
           <div class="row">
             <label for="poster">Poster:</label>
-            <input type="text" id="poster" name="poster" value="${movie.poster}/>
+            <input type="text" id="poster" name="poster" value="${movie.poster}"/>
           </div>
           <div class="row">
             <label for="year">Anno:</label>

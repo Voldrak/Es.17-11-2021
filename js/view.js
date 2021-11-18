@@ -9,13 +9,15 @@ const view = (id = 0) => {
       const container = document.querySelector("#container");
       render(
         container,
-        `<article>
+      `<article>
         <h2>${movie.title}</h2>
-        <p>${movie.year}</p>
+        <p class="yearsView">${movie.year}</p>
         <img src="${movie.poster}" />
-        <p>${movie.description}</p>
+        <p class="descView">${movie.description}</p>
         <hr />
+        <div class="backDiv">
         <a href="#" id="back">Torna alla home</a>
+        </div>
       </article>`
       );
     });
